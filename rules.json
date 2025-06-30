@@ -1,0 +1,29 @@
+[
+  {
+    "type": "rate_limit",
+    "keyword": "failed login for user",
+    "threshold": 3,
+    "interval_minutes": 3,
+    "description": "More than 3 failed logins within 3 minutes"
+  },
+  {
+    "keyword": "unauthorized",
+    "description": "Unauthorized access attempt"
+  },
+  {
+    "keyword": "suspicious",
+    "description": "Suspicious behavior"
+  },
+  {
+    "keyword": "/admin",
+    "description": "Admin path access"
+  },
+  {
+    "keyword": "/.env",
+    "description": "Potential config leak attempt"
+  },
+  {
+    "keyword": "/backup.zip",
+    "description": "Attempt to access backup file"
+  }
+]
